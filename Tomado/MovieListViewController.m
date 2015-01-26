@@ -11,14 +11,17 @@
 #import "UIImageView+AFNetworking.h"
 #import "DetailViewController.h"
 #import "SVProgressHUD.h"
+#import "AFHTTPRequestOperationManager.h"
 
 @interface MovieListViewController () <UITableViewDelegate, UITableViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UITableView *movieTable;
 @property (strong, nonatomic) NSArray *dataArray;
 @property (strong, nonatomic) UIRefreshControl *refreshControl;
+@property (strong, nonatomic) UILabel *headerView;
 
 - (void)loadData;
+- (void)checkNetwork;
 
 @end
 
@@ -40,7 +43,14 @@
     UINib *nib = [UINib nibWithNibName:@"MovieTableViewCell" bundle:nil];
     [self.movieTable registerNib:nib forCellReuseIdentifier:@"MovieCell"];
 
+    self.headerView = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 320, 40)];
+    self.headerView.text = @"Connection lost";
+    self.headerView.textColor = [UIColor redColor];
+    self.headerView.textAlignment = NSTextAlignmentCenter;
+    self.headerView.backgroundColor = [UIColor grayColor];
+    
     [self loadData];
+    [self checkNetwork];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -81,15 +91,49 @@
     NSURL *url = [NSURL URLWithString:@"http://api.rottentomatoes.com/api/public/v1.0/lists/movies/in_theaters.json?apikey=h6spu2je87qup8xv88xumcnr"];
     NSURLRequest *request = [[NSURLRequest alloc] initWithURL:url];
     [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
-        NSDictionary *dictionary = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
-        self.dataArray = [dictionary valueForKeyPath:@"movies"];
-        [self.movieTable reloadData];
-        NSLog(@"response: %@", dictionary);
-        
+        if (data) {
+            NSDictionary *dictionary = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
+            self.dataArray = [dictionary valueForKeyPath:@"movies"];
+            [self.movieTable reloadData];
+//        NSLog(@"response: %@", dictionary);
+        }
         [SVProgressHUD dismiss];
         [self.refreshControl endRefreshing];
     }];
     [SVProgressHUD show];
+}
+
+- (void)checkNetwork {
+    NSURL *url = [NSURL URLWithString:@"http://google.com"];
+    AFHTTPRequestOperationManager *manager = [[AFHTTPRequestOperationManager alloc] initWithBaseURL:url];
+    NSOperationQueue *operationQueue = manager.operationQueue;
+    [manager.reachabilityManager setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status)
+     
+     {
+         switch (status)
+         {
+             case AFNetworkReachabilityStatusReachableViaWWAN:
+             case AFNetworkReachabilityStatusReachableViaWiFi:
+             {
+                 NSLog(@"SO REACHABLE");
+                 self.movieTable.tableHeaderView = nil;
+                 [operationQueue setSuspended:NO]; // or do whatever you want
+                 
+                 break;
+             }
+                 
+             case AFNetworkReachabilityStatusNotReachable:
+             default:
+             {
+                 NSLog(@"SO UNREACHABLE");
+                 [operationQueue setSuspended:YES];
+                 self.movieTable.tableHeaderView = self.headerView;
+                 //not reachable,inform user perhaps
+                 break;
+             }
+         }
+     }];
+    [manager.reachabilityManager startMonitoring];
 }
 /*
 #pragma mark - Navigation
