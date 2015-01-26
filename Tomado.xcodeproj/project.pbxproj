@@ -1,0 +1,483 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0F3D514B1A75701E005C3F9C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F3D514A1A75701E005C3F9C /* main.m */; };
+		0F3D514E1A75701E005C3F9C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F3D514D1A75701E005C3F9C /* AppDelegate.m */; };
+		0F3D51511A75701E005C3F9C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F3D51501A75701E005C3F9C /* ViewController.m */; };
+		0F3D51561A75701E005C3F9C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F3D51551A75701E005C3F9C /* Images.xcassets */; };
+		0F3D51651A75701E005C3F9C /* TomadoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F3D51641A75701E005C3F9C /* TomadoTests.m */; };
+		0F3D51711A7571AA005C3F9C /* MovieListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F3D516F1A7571AA005C3F9C /* MovieListViewController.m */; };
+		0F3D51721A7571AA005C3F9C /* MovieListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F3D51701A7571AA005C3F9C /* MovieListViewController.xib */; };
+		0FAEA6091A75D5D100B1D7C4 /* MovieTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FAEA6071A75D5D100B1D7C4 /* MovieTableViewCell.m */; };
+		0FAEA60A1A75D5D100B1D7C4 /* MovieTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FAEA6081A75D5D100B1D7C4 /* MovieTableViewCell.xib */; };
+		E2516A953F78BBF476E70078 /* libPods-Tomado.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 979AE15BF8CD4C6EF9CE0DF3 /* libPods-Tomado.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0F3D515F1A75701E005C3F9C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0F3D513D1A75701E005C3F9C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0F3D51441A75701E005C3F9C;
+			remoteInfo = Tomado;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0F3D51451A75701E005C3F9C /* Tomado.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tomado.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F3D51491A75701E005C3F9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0F3D514A1A75701E005C3F9C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0F3D514C1A75701E005C3F9C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0F3D514D1A75701E005C3F9C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0F3D514F1A75701E005C3F9C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		0F3D51501A75701E005C3F9C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		0F3D51551A75701E005C3F9C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		0F3D515E1A75701E005C3F9C /* TomadoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TomadoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F3D51631A75701E005C3F9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0F3D51641A75701E005C3F9C /* TomadoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TomadoTests.m; sourceTree = "<group>"; };
+		0F3D516E1A7571AA005C3F9C /* MovieListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieListViewController.h; sourceTree = "<group>"; };
+		0F3D516F1A7571AA005C3F9C /* MovieListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieListViewController.m; sourceTree = "<group>"; };
+		0F3D51701A7571AA005C3F9C /* MovieListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MovieListViewController.xib; sourceTree = "<group>"; };
+		0FAEA6061A75D5D100B1D7C4 /* MovieTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieTableViewCell.h; sourceTree = "<group>"; };
+		0FAEA6071A75D5D100B1D7C4 /* MovieTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieTableViewCell.m; sourceTree = "<group>"; };
+		0FAEA6081A75D5D100B1D7C4 /* MovieTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MovieTableViewCell.xib; sourceTree = "<group>"; };
+		1C9D3B0ED797D7F403B528B2 /* Pods-Tomado.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tomado.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tomado/Pods-Tomado.release.xcconfig"; sourceTree = "<group>"; };
+		203D7AFF8C74807AAD0DCD0F /* Pods-Tomado.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tomado.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tomado/Pods-Tomado.debug.xcconfig"; sourceTree = "<group>"; };
+		979AE15BF8CD4C6EF9CE0DF3 /* libPods-Tomado.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tomado.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0F3D51421A75701E005C3F9C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2516A953F78BBF476E70078 /* libPods-Tomado.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0F3D515B1A75701E005C3F9C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0F3D513C1A75701E005C3F9C = {
+			isa = PBXGroup;
+			children = (
+				0F3D51471A75701E005C3F9C /* Tomado */,
+				0F3D51611A75701E005C3F9C /* TomadoTests */,
+				0F3D51461A75701E005C3F9C /* Products */,
+				D933ACA998C547DB8E85AC1D /* Pods */,
+				490281BA43350285E7644103 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0F3D51461A75701E005C3F9C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0F3D51451A75701E005C3F9C /* Tomado.app */,
+				0F3D515E1A75701E005C3F9C /* TomadoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0F3D51471A75701E005C3F9C /* Tomado */ = {
+			isa = PBXGroup;
+			children = (
+				0F3D514C1A75701E005C3F9C /* AppDelegate.h */,
+				0F3D514D1A75701E005C3F9C /* AppDelegate.m */,
+				0F3D514F1A75701E005C3F9C /* ViewController.h */,
+				0F3D51501A75701E005C3F9C /* ViewController.m */,
+				0F3D51551A75701E005C3F9C /* Images.xcassets */,
+				0F3D51481A75701E005C3F9C /* Supporting Files */,
+				0F3D516E1A7571AA005C3F9C /* MovieListViewController.h */,
+				0F3D516F1A7571AA005C3F9C /* MovieListViewController.m */,
+				0F3D51701A7571AA005C3F9C /* MovieListViewController.xib */,
+				0FAEA6061A75D5D100B1D7C4 /* MovieTableViewCell.h */,
+				0FAEA6071A75D5D100B1D7C4 /* MovieTableViewCell.m */,
+				0FAEA6081A75D5D100B1D7C4 /* MovieTableViewCell.xib */,
+			);
+			path = Tomado;
+			sourceTree = "<group>";
+		};
+		0F3D51481A75701E005C3F9C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0F3D51491A75701E005C3F9C /* Info.plist */,
+				0F3D514A1A75701E005C3F9C /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0F3D51611A75701E005C3F9C /* TomadoTests */ = {
+			isa = PBXGroup;
+			children = (
+				0F3D51641A75701E005C3F9C /* TomadoTests.m */,
+				0F3D51621A75701E005C3F9C /* Supporting Files */,
+			);
+			path = TomadoTests;
+			sourceTree = "<group>";
+		};
+		0F3D51621A75701E005C3F9C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0F3D51631A75701E005C3F9C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		490281BA43350285E7644103 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				979AE15BF8CD4C6EF9CE0DF3 /* libPods-Tomado.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D933ACA998C547DB8E85AC1D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				203D7AFF8C74807AAD0DCD0F /* Pods-Tomado.debug.xcconfig */,
+				1C9D3B0ED797D7F403B528B2 /* Pods-Tomado.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0F3D51441A75701E005C3F9C /* Tomado */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0F3D51681A75701E005C3F9C /* Build configuration list for PBXNativeTarget "Tomado" */;
+			buildPhases = (
+				C9E44B612024DC775D222D28 /* Check Pods Manifest.lock */,
+				0F3D51411A75701E005C3F9C /* Sources */,
+				0F3D51421A75701E005C3F9C /* Frameworks */,
+				0F3D51431A75701E005C3F9C /* Resources */,
+				F48FAD3F1F6B15CBBA371BC9 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tomado;
+			productName = Tomado;
+			productReference = 0F3D51451A75701E005C3F9C /* Tomado.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0F3D515D1A75701E005C3F9C /* TomadoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0F3D516B1A75701E005C3F9C /* Build configuration list for PBXNativeTarget "TomadoTests" */;
+			buildPhases = (
+				0F3D515A1A75701E005C3F9C /* Sources */,
+				0F3D515B1A75701E005C3F9C /* Frameworks */,
+				0F3D515C1A75701E005C3F9C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0F3D51601A75701E005C3F9C /* PBXTargetDependency */,
+			);
+			name = TomadoTests;
+			productName = TomadoTests;
+			productReference = 0F3D515E1A75701E005C3F9C /* TomadoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0F3D513D1A75701E005C3F9C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Doupan Guo";
+				TargetAttributes = {
+					0F3D51441A75701E005C3F9C = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					0F3D515D1A75701E005C3F9C = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 0F3D51441A75701E005C3F9C;
+					};
+				};
+			};
+			buildConfigurationList = 0F3D51401A75701E005C3F9C /* Build configuration list for PBXProject "Tomado" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0F3D513C1A75701E005C3F9C;
+			productRefGroup = 0F3D51461A75701E005C3F9C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0F3D51441A75701E005C3F9C /* Tomado */,
+				0F3D515D1A75701E005C3F9C /* TomadoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0F3D51431A75701E005C3F9C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F3D51721A7571AA005C3F9C /* MovieListViewController.xib in Resources */,
+				0F3D51561A75701E005C3F9C /* Images.xcassets in Resources */,
+				0FAEA60A1A75D5D100B1D7C4 /* MovieTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0F3D515C1A75701E005C3F9C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C9E44B612024DC775D222D28 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F48FAD3F1F6B15CBBA371BC9 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tomado/Pods-Tomado-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0F3D51411A75701E005C3F9C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F3D51511A75701E005C3F9C /* ViewController.m in Sources */,
+				0F3D514E1A75701E005C3F9C /* AppDelegate.m in Sources */,
+				0F3D514B1A75701E005C3F9C /* main.m in Sources */,
+				0FAEA6091A75D5D100B1D7C4 /* MovieTableViewCell.m in Sources */,
+				0F3D51711A7571AA005C3F9C /* MovieListViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0F3D515A1A75701E005C3F9C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F3D51651A75701E005C3F9C /* TomadoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0F3D51601A75701E005C3F9C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0F3D51441A75701E005C3F9C /* Tomado */;
+			targetProxy = 0F3D515F1A75701E005C3F9C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0F3D51661A75701E005C3F9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0F3D51671A75701E005C3F9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0F3D51691A75701E005C3F9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 203D7AFF8C74807AAD0DCD0F /* Pods-Tomado.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Tomado/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0F3D516A1A75701E005C3F9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C9D3B0ED797D7F403B528B2 /* Pods-Tomado.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Tomado/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		0F3D516C1A75701E005C3F9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TomadoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tomado.app/Tomado";
+			};
+			name = Debug;
+		};
+		0F3D516D1A75701E005C3F9C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TomadoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tomado.app/Tomado";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0F3D51401A75701E005C3F9C /* Build configuration list for PBXProject "Tomado" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0F3D51661A75701E005C3F9C /* Debug */,
+				0F3D51671A75701E005C3F9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0F3D51681A75701E005C3F9C /* Build configuration list for PBXNativeTarget "Tomado" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0F3D51691A75701E005C3F9C /* Debug */,
+				0F3D516A1A75701E005C3F9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0F3D516B1A75701E005C3F9C /* Build configuration list for PBXNativeTarget "TomadoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0F3D516C1A75701E005C3F9C /* Debug */,
+				0F3D516D1A75701E005C3F9C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0F3D513D1A75701E005C3F9C /* Project object */;
+}
