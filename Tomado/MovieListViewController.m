@@ -9,11 +9,14 @@
 #import "MovieListViewController.h"
 #import "MovieTableViewCell.h"
 #import "UIImageView+AFNetworking.h"
+#import "DetailViewController.h"
+#import "SVProgressHUD.h"
 
 @interface MovieListViewController () <UITableViewDelegate, UITableViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UITableView *movieTable;
 @property (strong, nonatomic) NSArray *dataArray;
+@property (strong, nonatomic) UIRefreshControl *refreshControl;
 
 - (void)loadData;
 
@@ -29,6 +32,10 @@
     self.movieTable.dataSource = self;
     self.movieTable.delegate = self;
     self.movieTable.rowHeight = 200;
+    
+    self.refreshControl = [[UIRefreshControl alloc] init];
+    [self.refreshControl addTarget:self action:@selector(loadData) forControlEvents:UIControlEventValueChanged];
+    [self.movieTable insertSubview:self.refreshControl atIndex:0];
     
     UINib *nib = [UINib nibWithNibName:@"MovieTableViewCell" bundle:nil];
     [self.movieTable registerNib:nib forCellReuseIdentifier:@"MovieCell"];
@@ -65,6 +72,9 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [self.movieTable deselectRowAtIndexPath:indexPath animated:YES];
+    DetailViewController *dvc = [[DetailViewController alloc] init];
+    dvc.movieDictionary = self.dataArray[indexPath.row];
+    [self.navigationController pushViewController:dvc animated:YES];
 }
 
 - (void)loadData {
@@ -75,7 +85,11 @@
         self.dataArray = [dictionary valueForKeyPath:@"movies"];
         [self.movieTable reloadData];
         NSLog(@"response: %@", dictionary);
+        
+        [SVProgressHUD dismiss];
+        [self.refreshControl endRefreshing];
     }];
+    [SVProgressHUD show];
 }
 /*
 #pragma mark - Navigation

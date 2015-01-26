@@ -6,6 +6,7 @@ target 'Tomado' do
 source 'https://github.com/CocoaPods/Specs.git'
 pod 'AFNetworking'
 
+pod 'SVProgressHUD'
 end
 
 target 'TomadoTests' do

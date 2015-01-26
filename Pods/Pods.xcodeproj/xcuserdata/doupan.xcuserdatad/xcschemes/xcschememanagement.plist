@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-Tomado-SVProgressHUD.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-Tomado.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -17,12 +22,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>6FE01CDBE495FA8C39FDBA18</key>
+		<key>3330CDE13AF4C5846953BE3A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8F00C7DF27D22F920F9BD396</key>
+		<key>A4FD4158E9D0632E8E918F2E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>ADA97153316AA2E963A42A68</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -16,6 +16,8 @@
 		0F3D51721A7571AA005C3F9C /* MovieListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F3D51701A7571AA005C3F9C /* MovieListViewController.xib */; };
 		0FAEA6091A75D5D100B1D7C4 /* MovieTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FAEA6071A75D5D100B1D7C4 /* MovieTableViewCell.m */; };
 		0FAEA60A1A75D5D100B1D7C4 /* MovieTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FAEA6081A75D5D100B1D7C4 /* MovieTableViewCell.xib */; };
+		0FAEA60E1A75E30100B1D7C4 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FAEA60C1A75E30100B1D7C4 /* DetailViewController.m */; };
+		0FAEA60F1A75E30100B1D7C4 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FAEA60D1A75E30100B1D7C4 /* DetailViewController.xib */; };
 		E2516A953F78BBF476E70078 /* libPods-Tomado.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 979AE15BF8CD4C6EF9CE0DF3 /* libPods-Tomado.a */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +49,9 @@
 		0FAEA6061A75D5D100B1D7C4 /* MovieTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieTableViewCell.h; sourceTree = "<group>"; };
 		0FAEA6071A75D5D100B1D7C4 /* MovieTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieTableViewCell.m; sourceTree = "<group>"; };
 		0FAEA6081A75D5D100B1D7C4 /* MovieTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MovieTableViewCell.xib; sourceTree = "<group>"; };
+		0FAEA60B1A75E30100B1D7C4 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		0FAEA60C1A75E30100B1D7C4 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		0FAEA60D1A75E30100B1D7C4 /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 		1C9D3B0ED797D7F403B528B2 /* Pods-Tomado.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tomado.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tomado/Pods-Tomado.release.xcconfig"; sourceTree = "<group>"; };
 		203D7AFF8C74807AAD0DCD0F /* Pods-Tomado.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tomado.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tomado/Pods-Tomado.debug.xcconfig"; sourceTree = "<group>"; };
 		979AE15BF8CD4C6EF9CE0DF3 /* libPods-Tomado.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tomado.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -106,6 +111,9 @@
 				0FAEA6061A75D5D100B1D7C4 /* MovieTableViewCell.h */,
 				0FAEA6071A75D5D100B1D7C4 /* MovieTableViewCell.m */,
 				0FAEA6081A75D5D100B1D7C4 /* MovieTableViewCell.xib */,
+				0FAEA60B1A75E30100B1D7C4 /* DetailViewController.h */,
+				0FAEA60C1A75E30100B1D7C4 /* DetailViewController.m */,
+				0FAEA60D1A75E30100B1D7C4 /* DetailViewController.xib */,
 			);
 			path = Tomado;
 			sourceTree = "<group>";
@@ -238,6 +246,7 @@
 				0F3D51721A7571AA005C3F9C /* MovieListViewController.xib in Resources */,
 				0F3D51561A75701E005C3F9C /* Images.xcassets in Resources */,
 				0FAEA60A1A75D5D100B1D7C4 /* MovieTableViewCell.xib in Resources */,
+				0FAEA60F1A75E30100B1D7C4 /* DetailViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,6 +302,7 @@
 				0F3D514B1A75701E005C3F9C /* main.m in Sources */,
 				0FAEA6091A75D5D100B1D7C4 /* MovieTableViewCell.m in Sources */,
 				0F3D51711A7571AA005C3F9C /* MovieListViewController.m in Sources */,
+				0FAEA60E1A75E30100B1D7C4 /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
