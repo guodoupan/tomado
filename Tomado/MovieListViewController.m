@@ -39,7 +39,7 @@
     
     UINib *nib = [UINib nibWithNibName:@"MovieTableViewCell" bundle:nil];
     [self.movieTable registerNib:nib forCellReuseIdentifier:@"MovieCell"];
-    
+
     [self loadData];
 }
 
