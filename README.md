@@ -24,5 +24,6 @@ Optional
   * [x] Customize the navigation bar.
 
 Walkthrough
+
 ![Video Walkthrough](walkthrough.gif)
 
