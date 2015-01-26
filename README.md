@@ -1,6 +1,6 @@
 # tomado
 
-This is a movies app displaying box office and top rental DVDs using the Rotten Tomatoes API.
+This is a movies app displaying latest movie info using the Rotten Tomatoes API.
 
 Time spent: 6 hours
 
@@ -24,4 +24,5 @@ Optional
   * [x] Customize the navigation bar.
 
 Walkthrough
+![Video Walkthrough](walkthrough.gif)
 
