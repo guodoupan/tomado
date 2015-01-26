@@ -62,7 +62,7 @@
     return self.dataArray.count;
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+- (MovieTableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString *simpleTableIdentifier = @"MovieCell";
     
     MovieTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];

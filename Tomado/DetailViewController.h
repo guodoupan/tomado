@@ -11,4 +11,5 @@
 @interface DetailViewController : UIViewController
 
 @property (strong, nonatomic) NSDictionary *movieDictionary;
+@property (weak, nonatomic) UIImage *placeHolderImage;
 @end

@@ -14,6 +14,7 @@
 @property (weak, nonatomic) IBOutlet UIImageView *posterImageView;
 @property (weak, nonatomic) IBOutlet UITableView *detailTable;
 
+- (void) loadOriginalImage;
 @end
 
 @implementation DetailViewController
@@ -29,15 +30,26 @@
     UIView *headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 320)];
     self.detailTable.tableHeaderView = headerView;
     
-    NSString *url = [[[self.movieDictionary objectForKey:@"posters"] objectForKey:@"original"]
-                     stringByReplacingOccurrencesOfString:@"tmb" withString:@"ori"];
-    [self.posterImageView setImageWithURL:[NSURL URLWithString:url]];
+    NSString *proUrl = [[[self.movieDictionary objectForKey:@"posters"] objectForKey:@"original"]
+                     stringByReplacingOccurrencesOfString:@"tmb" withString:@"pro"];
+    
+    [self.posterImageView setImageWithURL:[NSURL URLWithString:proUrl]];
+    
+    [self performSelector:@selector(loadOriginalImage) withObject:nil afterDelay:0.1];
+    
     
     self.detailTable.delegate = self;
     self.detailTable.dataSource = self;
     self.detailTable.backgroundColor = [UIColor clearColor];
     
     
+}
+
+
+- (void)loadOriginalImage {
+    NSString *originalUrl = [[[self.movieDictionary objectForKey:@"posters"] objectForKey:@"original"]
+                    stringByReplacingOccurrencesOfString:@"tmb" withString:@"ori"];
+    [self.posterImageView setImageWithURL:[NSURL URLWithString:originalUrl]];
 }
 
 - (void)didReceiveMemoryWarning {
