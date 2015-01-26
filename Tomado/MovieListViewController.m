@@ -35,6 +35,7 @@
     self.movieTable.dataSource = self;
     self.movieTable.delegate = self;
     self.movieTable.rowHeight = 200;
+    self.movieTable.backgroundColor = [UIColor clearColor];
     
     self.refreshControl = [[UIRefreshControl alloc] init];
     [self.refreshControl addTarget:self action:@selector(loadData) forControlEvents:UIControlEventValueChanged];
@@ -77,6 +78,7 @@
     
     NSString *url = [[[data valueForKey:@"posters"] valueForKey:@"thumbnail"] stringByReplacingOccurrencesOfString:@"tmb" withString:@"pro"];
     [cell.posterImage setImageWithURL:[NSURL URLWithString:url]];
+    cell.backgroundColor = [UIColor clearColor];
     return cell;
 }
 

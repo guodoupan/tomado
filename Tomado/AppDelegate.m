@@ -26,7 +26,9 @@
     self.window.rootViewController = nvc;
     [self.window makeKeyAndVisible];
     
-   
+    UIColor *goldColor = [UIColor colorWithRed:247.0/255.0 green:201.0/255.0 blue:0.0 alpha:1];
+    [[UINavigationBar appearance] setTintColor:goldColor];
+    [[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName:goldColor}];
     
     return YES;
 }
