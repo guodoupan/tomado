@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <objects>
@@ -16,18 +17,26 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="Rrf-U4-1Tf">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Rrf-U4-1Tf">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 </imageView>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="DaE-Tu-KSz">
-                    <rect key="frame" x="0.0" y="8" width="320" height="560"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="DaE-Tu-KSz">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <color key="sectionIndexBackgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                 </tableView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Rrf-U4-1Tf" secondAttribute="bottom" id="4Vw-O5-ZEb"/>
+                <constraint firstAttribute="trailing" secondItem="Rrf-U4-1Tf" secondAttribute="trailing" id="58C-2H-WQH"/>
+                <constraint firstItem="DaE-Tu-KSz" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="BQK-dG-1ww"/>
+                <constraint firstItem="Rrf-U4-1Tf" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="IBs-vh-OFA"/>
+                <constraint firstAttribute="trailing" secondItem="DaE-Tu-KSz" secondAttribute="trailing" id="Jwp-Qq-zzZ"/>
+                <constraint firstItem="DaE-Tu-KSz" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="NJp-PJ-Sbe"/>
+                <constraint firstAttribute="bottom" secondItem="DaE-Tu-KSz" secondAttribute="bottom" id="Sul-nq-2Nd"/>
+                <constraint firstItem="Rrf-U4-1Tf" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="mpf-N8-z4j"/>
+            </constraints>
             <point key="canvasLocation" x="350" y="232"/>
         </view>
     </objects>

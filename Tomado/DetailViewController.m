@@ -8,6 +8,7 @@
 
 #import "DetailViewController.h"
 #import "UIImageView+AFNetworking.h"
+#import "DetailTableViewCell.h"
 
 @interface DetailViewController () <UITableViewDelegate, UITableViewDataSource>
 
@@ -42,7 +43,8 @@
     self.detailTable.dataSource = self;
     self.detailTable.backgroundColor = [UIColor clearColor];
     
-    
+    UINib *nib = [UINib nibWithNibName:@"DetailTableViewCell" bundle:nil];
+    [self.detailTable registerNib:nib forCellReuseIdentifier:@"DetailTableViewCell"];
 }
 
 
@@ -67,10 +69,8 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"SimpleTableCell"];
-    if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"SimpleTableCell"];
-    }
+    DetailTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"DetailTableViewCell"];
+    
     NSString *title = [self.movieDictionary valueForKey:@"title"];
     NSString *year = [self.movieDictionary valueForKey:@"year"];
     NSString *synopsis = [self.movieDictionary valueForKey:@"synopsis"];
@@ -79,12 +79,8 @@
     int audienceScore = [[rating objectForKey:@"audience_score"] intValue];
     int criticsScore = [[rating objectForKey:@"critics_score"] intValue];
     
-    cell.textLabel.text = [NSString stringWithFormat:@"%@ (%@)\nCritics Score: %d, Audience Score: %d\n%@\n\n%@",
+    cell.descLabel.text = [NSString stringWithFormat:@"%@ (%@)\nCritics Score: %d, Audience Score: %d\n%@\n\n%@",
                            title, year, criticsScore, audienceScore, mpaaRating, synopsis];
-    [cell.textLabel sizeToFit];
-    cell.textLabel.numberOfLines = 0;
-    cell.textLabel.textColor = [UIColor whiteColor];
-    cell.backgroundColor = [UIColor colorWithWhite:(0) alpha:0.7];
     return cell;
 }
 /*

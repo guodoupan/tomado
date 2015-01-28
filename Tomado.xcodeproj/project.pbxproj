@@ -14,6 +14,8 @@
 		0F3D51651A75701E005C3F9C /* TomadoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F3D51641A75701E005C3F9C /* TomadoTests.m */; };
 		0F3D51711A7571AA005C3F9C /* MovieListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F3D516F1A7571AA005C3F9C /* MovieListViewController.m */; };
 		0F3D51721A7571AA005C3F9C /* MovieListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F3D51701A7571AA005C3F9C /* MovieListViewController.xib */; };
+		0F987AB11A78A5F400BD15EF /* DetailTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F987AAF1A78A5F400BD15EF /* DetailTableViewCell.m */; };
+		0F987AB21A78A5F400BD15EF /* DetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F987AB01A78A5F400BD15EF /* DetailTableViewCell.xib */; };
 		0FAEA6091A75D5D100B1D7C4 /* MovieTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FAEA6071A75D5D100B1D7C4 /* MovieTableViewCell.m */; };
 		0FAEA60A1A75D5D100B1D7C4 /* MovieTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0FAEA6081A75D5D100B1D7C4 /* MovieTableViewCell.xib */; };
 		0FAEA60E1A75E30100B1D7C4 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FAEA60C1A75E30100B1D7C4 /* DetailViewController.m */; };
@@ -46,6 +48,9 @@
 		0F3D516E1A7571AA005C3F9C /* MovieListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieListViewController.h; sourceTree = "<group>"; };
 		0F3D516F1A7571AA005C3F9C /* MovieListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieListViewController.m; sourceTree = "<group>"; };
 		0F3D51701A7571AA005C3F9C /* MovieListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MovieListViewController.xib; sourceTree = "<group>"; };
+		0F987AAE1A78A5F400BD15EF /* DetailTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailTableViewCell.h; sourceTree = "<group>"; };
+		0F987AAF1A78A5F400BD15EF /* DetailTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailTableViewCell.m; sourceTree = "<group>"; };
+		0F987AB01A78A5F400BD15EF /* DetailTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailTableViewCell.xib; sourceTree = "<group>"; };
 		0FAEA6061A75D5D100B1D7C4 /* MovieTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieTableViewCell.h; sourceTree = "<group>"; };
 		0FAEA6071A75D5D100B1D7C4 /* MovieTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieTableViewCell.m; sourceTree = "<group>"; };
 		0FAEA6081A75D5D100B1D7C4 /* MovieTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MovieTableViewCell.xib; sourceTree = "<group>"; };
@@ -114,6 +119,9 @@
 				0FAEA60B1A75E30100B1D7C4 /* DetailViewController.h */,
 				0FAEA60C1A75E30100B1D7C4 /* DetailViewController.m */,
 				0FAEA60D1A75E30100B1D7C4 /* DetailViewController.xib */,
+				0F987AAE1A78A5F400BD15EF /* DetailTableViewCell.h */,
+				0F987AAF1A78A5F400BD15EF /* DetailTableViewCell.m */,
+				0F987AB01A78A5F400BD15EF /* DetailTableViewCell.xib */,
 			);
 			path = Tomado;
 			sourceTree = "<group>";
@@ -244,6 +252,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F3D51721A7571AA005C3F9C /* MovieListViewController.xib in Resources */,
+				0F987AB21A78A5F400BD15EF /* DetailTableViewCell.xib in Resources */,
 				0F3D51561A75701E005C3F9C /* Images.xcassets in Resources */,
 				0FAEA60A1A75D5D100B1D7C4 /* MovieTableViewCell.xib in Resources */,
 				0FAEA60F1A75E30100B1D7C4 /* DetailViewController.xib in Resources */,
@@ -303,6 +312,7 @@
 				0FAEA6091A75D5D100B1D7C4 /* MovieTableViewCell.m in Sources */,
 				0F3D51711A7571AA005C3F9C /* MovieListViewController.m in Sources */,
 				0FAEA60E1A75E30100B1D7C4 /* DetailViewController.m in Sources */,
+				0F987AB11A78A5F400BD15EF /* DetailTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,7 +417,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Tomado/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -419,7 +429,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Tomado/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
